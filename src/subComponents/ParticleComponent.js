@@ -3,8 +3,10 @@ import Particles from 'react-tsparticles'
 import styled from 'styled-components'
 
 // particle config files
-import configDark from "../config/particlesjs-config.json"
-import configLight from "../config/particlesjs-config-light.json"
+import configTamno from "../config/particlesjs-config-tamno.json"
+// import configSvijetlo from "../config/particlesjs-config-svijetlo.json"
+// import configDark from "../config/particlesjs-config.json"
+ import configLight from "../config/particlesjs-config-light.json"
 
 const Box = styled.div`
 position: absolute;
@@ -18,7 +20,7 @@ z-index: 0;
 const ParticleComponent = (props) => {
   return (
     <Box>
-        <Particles style={{position:'absolute', top:0}} params={props.theme === "light" ? configLight : configDark } />
+        <Particles style={{position:'absolute', top:0}} params={props.theme === "light" ? configLight : configTamno } />
     </Box>
   )
 }
