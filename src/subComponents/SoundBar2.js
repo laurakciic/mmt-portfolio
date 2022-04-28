@@ -1,14 +1,14 @@
 import React, { useRef, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 
-import music from "../assets/audio/u-said-it-v13-1167.mp3"
+import music2 from "../assets/audio/mirjam.mp3"
 
 const Box = styled.div`
 display: flex;
 cursor: pointer;
 position: fixed;
-left: 8rem;
-top: 3rem;
+left: 10rem;
+top: 2rem;
 z-index: 10;
 
 &>*:nth-child(1){
@@ -50,7 +50,7 @@ width: 2px;
 margin: 0 0.1rem;
 `
 
-const SoundBar = () => {
+const SoundBar2 = () => {
 
   const ref = useRef(null);
   const [click, setClick] = useState(false);
@@ -73,9 +73,9 @@ const SoundBar = () => {
         <Line click={click}/>
         <Line click={click}/>
 
-        <audio src={music} ref={ref} loop />
+        <audio src={music2} ref={ref} loop />
     </Box>
   )
 }
 
-export default SoundBar
+export default SoundBar2

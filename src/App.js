@@ -11,7 +11,8 @@ import WorkPage from './components/WorkPage';
 import OurSkillsPage from './components/OurSkillsPage';
 import { useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import SoundBar from "./subComponents/SoundBar";
+import SoundBar1 from "./subComponents/SoundBar1";
+import SoundBar2 from "./subComponents/SoundBar2";
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
 
       <ThemeProvider theme = {lightTheme}>
 
-      <SoundBar />
+      <SoundBar1 />
+      <SoundBar2 />
       
       {/* for framer-motion animation on page change*/}
       <AnimatePresence exitBeforeEnter>
