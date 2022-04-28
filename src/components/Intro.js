@@ -31,7 +31,6 @@ background: linear-gradient(
     border-right: 2px solid ${props => props.theme.text};
 
     z-index: 1;
-)
 `
 const SubBox = styled.div`
 width: 50%;
@@ -77,7 +76,7 @@ const Intro = () => {
         <SubBox>
             <Text>
                 <h3>Hi,</h3>
-                <h5>We're Mirjam & Laura</h5>
+                <h5>We're Mirjam and Laura</h5>
                 <h6>We made this website during the course of attending FERIT, as part of a Multimedia technology class.</h6>
             </Text>
         </SubBox>
