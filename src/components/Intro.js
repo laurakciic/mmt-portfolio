@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import Me from '../assets/images/profile-img.png'
+import LauraAvatar from '../assets/images/laura-av.png'
+import MirjamAvatar from '../assets/images/mirjam-av.png'
 
 const Box = styled(motion.div)`
 
@@ -37,10 +38,18 @@ width: 50%;
 position: relative;
 display: flex;
 
-.pic{
+.pic1{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 20%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    height: auto;
+}
+.pic2{
+    position: absolute;
+    bottom: 0;
+    left: 70%;
     transform: translate(-50%, 0%);
     width: 100%;
     height: auto;
@@ -94,7 +103,8 @@ const Intro = () => {
             animate={{opacity: 1}}
             transition={{ duration:1, delay:2 }}
             >
-                <img className="pic" src={Me} alt="Profile Pic" />
+                <img className="pic1" src={LauraAvatar} alt="Profile Pic" />
+                <img className="pic2" src={MirjamAvatar} alt="Profile Pic" />
             </motion.div>
         </SubBox>
     </Box>
