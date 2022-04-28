@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ThemeProvider } from 'styled-components'
+import { lightTheme } from './Themes';
+
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons from '../subComponents/SocialIcons'
-import { lightTheme } from './Themes'
 import PowerButton from '../subComponents/PowerButton'
+import ParticleComponent from '../subComponents/ParticleComponent';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -24,6 +26,7 @@ width: 30vw;
 height: 60vh;
 z-index: 3;
 line-height: 1.5;
+cursor: pointer;
 
 font-family: 'Ubunto Mono', monospace;
 display: flex;
@@ -64,7 +67,7 @@ ${Main}:hover &{
 
 strong{
   margin-bottom: 1rem;
-  text-tranform: uppercase;
+  text-transform: uppercase;
 }
 ul,p{
   margin-left: 2rem;
@@ -74,63 +77,64 @@ ul,p{
 const OurSkillsPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
-      <Box>
-        <LogoComponent theme='light'/>
-        <SocialIcons theme='light'/>
-        <PowerButton />
 
-        <Main>
-          <Title>
-            Laura
-          </Title>
-          <Description>
-            laurin opis
-          </Description>
-          <Description>
-            <strong> wiiii </strong>
-            <ul>
-              <li>
-                1
-              </li>
-              <li>
-                2
-              </li>
-            </ul>
-          </Description>
-          <Description>
-            <strong> tools </strong>
-            <ul>
-              <li>
-                11111111
-              </li>
-            </ul>
-          </Description>
-        </Main>
+    <Box>
+      <LogoComponent theme='light'/>
+      <SocialIcons theme='light'/>
+      <PowerButton />
+      <ParticleComponent theme='light' />
 
-        <Main>
-          <Title>
-            Mirjam
-          </Title>
-          <Description>
-            mirjamin opis
-          </Description>
-          <Description>
-            <strong> wiiii2 </strong>
-            <p>
-              1, 2, 3, 4, 5
-            </p>
-          </Description>
-          <Description>
-            <strong> tools </strong>
-            <p>
-              tttttttttt
-            </p>
-          </Description>
-        </Main>
+      <Main>
+        <Title>
+          Laura
+        </Title>
+        <Description>
+          laurin opis
+        </Description>
+        <Description>
+          <strong> wiiii </strong>
+          <ul>
+            <li>
+              1
+            </li>
+            <li>
+              2
+            </li>
+          </ul>
+        </Description>
+        <Description>
+          <strong> tools </strong>
+          <ul>
+            <li>
+              11111111
+            </li>
+          </ul>
+        </Description>
+      </Main>
 
-      </Box>
-    </ThemeProvider>
-    
+      <Main>
+        <Title>
+          Mirjam
+        </Title>
+        <Description>
+          mirjamin opis
+        </Description>
+        <Description>
+          <strong> wiiii2 </strong>
+          <p>
+            1, 2, 3, 4, 5
+          </p>
+        </Description>
+        <Description>
+          <strong> tools </strong>
+          <p>
+            tttttttttt
+          </p>
+        </Description>
+      </Main>
+
+    </Box>
+    </ThemeProvider>  
   )
 }
 
