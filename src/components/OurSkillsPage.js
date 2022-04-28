@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme } from './Themes';
 
-import LogoComponent from '../subComponents/LogoComponent'
+/* import LogoComponent from '../subComponents/LogoComponent' */
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
 import ParticleComponent from '../subComponents/ParticleComponent';
@@ -58,7 +58,7 @@ ${Main}:hover &{
 
 const Description = styled.div`
 color: ${props => props.theme.text};
-font-size: calc(0.6em + 1vw);
+font-size: calc(0.6em + 0.5vw);
 padding: 0.5rem 0;
 
 ${Main}:hover &{
@@ -79,7 +79,7 @@ const OurSkillsPage = () => {
     <ThemeProvider theme={lightTheme}>
 
     <Box>
-      <LogoComponent theme='light'/>
+      {/* <LogoComponent theme='light'/> */}
       <SocialIcons theme='light'/>
       <PowerButton />
       <ParticleComponent theme='light' />
@@ -89,24 +89,24 @@ const OurSkillsPage = () => {
           Laura
         </Title>
         <Description>
-          laurin opis
-        </Description>
-        <Description>
-          <strong> wiiii </strong>
-          <ul>
+        <ul>
             <li>
-              1
+              Elementary School: 
+              <a target="_blank" href="http://os-tenja.skole.hr/">OŠ Tenja</a>
             </li>
             <li>
-              2
+              High School:
+              <a target="_blank" href="http://www.gimnazija-prva-os.skole.hr/">I. gimnazija Osijek</a>
             </li>
-          </ul>
-        </Description>
-        <Description>
-          <strong> tools </strong>
-          <ul>
             <li>
-              11111111
+              Faculty: 
+              <a target="_blank" href="https://www.ferit.unios.hr/2021/">FERIT, Osijek</a>
+            </li>
+            <li>
+              Skills: problem solving, communication, proffiency, teamwork
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/laurakciic">Github</a>
             </li>
           </ul>
         </Description>
@@ -117,19 +117,26 @@ const OurSkillsPage = () => {
           Mirjam
         </Title>
         <Description>
-          mirjamin opis
-        </Description>
-        <Description>
-          <strong> wiiii2 </strong>
-          <p>
-            1, 2, 3, 4, 5
-          </p>
-        </Description>
-        <Description>
-          <strong> tools </strong>
-          <p>
-            tttttttttt
-          </p>
+          <ul>
+            <li>
+              Elementary School: 
+              <a target="_blank" href="http://os-retfala-os.skole.hr/">OŠ Retfala</a>
+            </li>
+            <li>
+              High School:
+              <a target="_blank" href="http://gimnazija-treca-os.skole.hr/">III. gimnazija Osijek</a>
+            </li>
+            <li>
+              Faculty: 
+              <a target="_blank" href="https://www.ferit.unios.hr/2021/">FERIT, Osijek</a>
+            </li>
+            <li>
+              Skills: problem solving, communication, proffiency, teamwork
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/laurakciic">Github</a>
+            </li>
+          </ul>
         </Description>
       </Main>
 

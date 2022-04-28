@@ -135,7 +135,7 @@ const Main = () => {
         <DarkDiv click={click}/>
         <Container>
         <PowerButton />
-        <LogoComponent theme={click ? 'dark' : 'light'} />
+        {/* <LogoComponent theme={click ? 'dark' : 'light'} /> */}
         <SocialIcons theme={click ? 'dark' : 'light'} />
 
         <Center click={click}>
@@ -213,7 +213,7 @@ const Main = () => {
               whileTap={{scale: 0.9}}
 
               >
-                About us.
+                • About us •
             </motion.h2>
           </ABOUT>
           <SKILLS to="/skills">
@@ -231,7 +231,7 @@ const Main = () => {
               whileTap={{scale: 0.9}}
 
               >
-              Our Skills.
+              • Education •
             </motion.h2>
           </SKILLS>
 

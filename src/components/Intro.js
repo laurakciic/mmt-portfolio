@@ -45,6 +45,10 @@ display: flex;
     width: 100%;
     height: auto;
 }
+
+/* .a{
+    color: ${props => props.theme.text};
+} */
 `
 const Text = styled.div`
 font-size: calc(1em + 1vw);
@@ -77,7 +81,11 @@ const Intro = () => {
             <Text>
                 <h3>Hi,</h3>
                 <h5>We're Mirjam and Laura</h5>
-                <h6>We made this website during the course of attending FERIT, as part of a Multimedia technology class.</h6>
+                <h6>We made this website during the course of attending 
+                    <a target="_blank" href="https://www.ferit.unios.hr/2021/">FERIT</a>
+                    , as part of a 
+                    <a target="_blank" href="https://moodle.srce.hr/2021-2022/course/view.php?id=101998">Multimedia technology</a>
+                    class.</h6>
             </Text>
         </SubBox>
         <SubBox>
