@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {motion} from 'framer-motion'
 import Me from '../assets/images/profile-img.png'
 
-const Box = styled.div`
+const Box = styled(motion.div)`
 
 position: absolute;
 left: 50%;
@@ -11,8 +11,8 @@ top: 50%;
 transform: translate(-50%, -50%);
 
 
-width: 55vw;
-
+width: 65vw;
+height: 75vh;
 display: flex;
 
 
@@ -56,22 +56,39 @@ cursor: pointer;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
+
+&>*:last-child{
+    color: ${props => 'rgba(${props.theme.bodyRgba},0.6)' };
+    font-size: calc(0.5rem + 1vw);
+    font-weight: 300;
+
+}
+
+
 `
 
 const Intro = () => {
   return (
-    <Box>
+    <Box
+    initial={{height:0}}
+    animate={{height: '65vh'}}
+    transition={{ type: 'spring', duration:2, delay:1 }}
+    >
         <SubBox>
             <Text>
                 <h3>Hi,</h3>
                 <h5>We're Mirjam & Laura</h5>
-                <h6>We made this website during the course of attending FERIT, as part of a Multimedia technology class</h6>
+                <h6>We made this website during the course of attending FERIT, as part of a Multimedia technology class.</h6>
             </Text>
         </SubBox>
         <SubBox>
-            <div>
+            <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{ duration:1, delay:2 }}
+            >
                 <img className="pic" src={Me} alt="Profile Pic" />
-            </div>
+            </motion.div>
         </SubBox>
     </Box>
   )
