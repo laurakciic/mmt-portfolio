@@ -17,7 +17,7 @@ const LogoComponent = (props) => {
   return (
     <Logo color={props.theme}>
         {/* initials */}
-        Mirjam & Laura
+        M & L
     </Logo>
   )
 }
