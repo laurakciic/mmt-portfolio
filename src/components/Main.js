@@ -25,16 +25,16 @@ const Container = styled.div`
 padding: 2rem;
 `
 
-/* const Contact = styled(NavLink)`
+const Contact = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
 right: calc(1rem + 2vw);
 text-decoration: none;
 z-index: 1;
-` */
+`
 
-/* const BLOG = styled(NavLink)`
+const BLOG = styled(NavLink)`
 color: ${props => props.theme.text};
 position: absolute;
 top: 50%;
@@ -42,9 +42,9 @@ right: calc(1rem + 2vw);
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
-` */
+`
 
-/* const WORK = styled(NavLink)`
+const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 position: absolute;
 top: 50%;
@@ -52,7 +52,7 @@ left: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg);
 text-decoration: none;
 z-index: 1;
-` */
+`
 
 const BottomBar = styled.div`
 position: absoulte;
@@ -160,7 +160,7 @@ const Main = () => {
           >
             Say hi to us
           </motion.h2>
-        </Contact>
+        </Contact> */}
         <BLOG to="/blog">
           <motion.h2
           initial={{
@@ -176,10 +176,10 @@ const Main = () => {
           whileTap={{scale: 0.9}}
 
           >
-            Blog
+            • Photo & Video •
           </motion.h2>
         </BLOG>
-        <WORK to="/work" click={click}>
+        {/* <WORK to="/work" click={click}>
           <motion.h2
           initial={{
             y:-200,

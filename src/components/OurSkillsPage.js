@@ -134,7 +134,7 @@ const OurSkillsPage = () => {
               Skills: problem solving, communication, proffiency, teamwork
             </li>
             <li>
-              <a target="_blank" href="https://github.com/laurakciic">Github</a>
+              <a target="_blank" href="https://gitlab.com/mirjam.ercegovac">Gitlab</a>
             </li>
           </ul>
         </Description>
