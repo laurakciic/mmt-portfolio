@@ -140,7 +140,7 @@ const Main = () => {
 
         <Center click={click}>
           <YinYang onClick={() => handleClick()} width={click ? 120 : 200} height={200} fill='currentColor' />
-          <span>click here</span>
+          <span>click the YinYang for surprise!</span>
         </Center>
 
         {/* <Contact target="_blank" to={{pathname: "https://myaccount.google.com/"}}>  

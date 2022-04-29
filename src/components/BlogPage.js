@@ -8,10 +8,10 @@ import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
 import ParticleComponent from '../subComponents/ParticleComponent';
 
-import Laura125 from '../assets/images/laura-125.bmp';
-import Laura256 from '../assets/images/laura-256.jpg';
-import Mirjam125 from '../assets/images/mirjam-87-125.png';
-import Mirjam222 from '../assets/images/mirjam125-222.gif';
+import Laura256 from '../assets/images/laura-256.bmp';
+import Laura400 from '../assets/images/laura-400.jpg';
+import MirjamVelika from '../assets/images/mirjam-velika.png';
+import MirjamMala from '../assets/images/mirjam-mala.gif';
 
 
 const Box = styled.div`
@@ -66,6 +66,8 @@ const Description = styled.div`
 color: ${props => props.theme.text};
 font-size: calc(0.6em + 0.5vw);
 padding: 0.5rem 0;
+justify-content: center;
+align-items: center;
 
 ${Main}:hover &{
   color:${props => props.theme.body};
@@ -80,13 +82,13 @@ ul,p{
 } */
 `
 function makeLauraBigger(e) {
-  e.target.setAttribute( 'src', Laura256);
-  e.target.setAttribute('alt', 'laura256');
+  e.target.setAttribute( 'src', Laura400);
+  e.target.setAttribute('alt', 'laura400');
 }
 
 function makeMirjamBigger(e) {
-  e.target.setAttribute( 'src', Mirjam222);
-  e.target.setAttribute('alt', 'mirjam222');
+  e.target.setAttribute( 'src', MirjamVelika);
+  e.target.setAttribute('alt', 'mirjamVelika');
 }
 
 const BlogPage = () => {
@@ -105,7 +107,7 @@ const BlogPage = () => {
         </Title> */}
 
         <Description>
-          <img src={Laura125} alt="laura1" onClick={makeLauraBigger}
+          <img src={Laura256} alt="laura1" onClick={makeLauraBigger}
           />
           <p>Click on the photo</p>
         </Description>
@@ -118,7 +120,7 @@ const BlogPage = () => {
         </Title> */}
 
         <Description>
-          <img src={Mirjam125} alt="mirjam1" onClick={makeMirjamBigger}
+          <img src={MirjamMala} alt="mirjam1" onClick={makeMirjamBigger}
             />
             <p>Click on the photo</p>
         </Description>

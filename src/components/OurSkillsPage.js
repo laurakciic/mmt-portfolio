@@ -43,7 +43,7 @@ const Title = styled.h2`
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: calc(1em + 1vw);
+font-size: calc(0.6em + 1vw);
 
 ${Main}:hover &{
   &>*{
@@ -58,7 +58,7 @@ ${Main}:hover &{
 
 const Description = styled.div`
 color: ${props => props.theme.text};
-font-size: calc(0.6em + 0.5vw);
+font-size: calc(0.6em + 1vw);
 padding: 0.5rem 0;
 
 ${Main}:hover &{
@@ -71,6 +71,30 @@ strong{
 }
 ul,p{
   margin-left: 2rem;
+}
+
+a:link {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
 }
 `
 
@@ -86,57 +110,67 @@ const OurSkillsPage = () => {
 
       <Main>
         <Title>
-          Laura
+          • Laura •
         </Title>
         <Description>
-        <ul>
-            <li>
+        <dl>
+            <dt>
               Elementary School: 
-              <a target="_blank" href="http://os-tenja.skole.hr/">OŠ Tenja</a>
-            </li>
-            <li>
+              <a target="_blank" href="http://os-tenja.skole.hr/">  OŠ Tenja </a>
+            </dt>
+            <dt>
               High School:
-              <a target="_blank" href="http://www.gimnazija-prva-os.skole.hr/">I. gimnazija Osijek</a>
-            </li>
-            <li>
+              <a target="_blank" href="http://www.gimnazija-prva-os.skole.hr/">  I. gimnazija OS </a>
+            </dt>
+            <dt>
               Faculty: 
-              <a target="_blank" href="https://www.ferit.unios.hr/2021/">FERIT, Osijek</a>
-            </li>
-            <li>
-              Skills: problem solving, communication, proffiency, teamwork
-            </li>
-            <li>
-              <a target="_blank" href="https://github.com/laurakciic">Github</a>
-            </li>
-          </ul>
+              <a target="_blank" href="https://www.ferit.unios.hr/2021/">  FERIT, Osijek</a>
+            </dt>
+            <dt>
+              Skills:
+            </dt>
+              <dd>
+                <li>
+                  problem solving, communication, proffiency, teamwork
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com/laurakciic">Github account</a>
+                </li>
+            </dd>
+          </dl>
         </Description>
       </Main>
 
       <Main>
         <Title>
-          Mirjam
+          • Mirjam •
         </Title>
         <Description>
-          <ul>
-            <li>
+          <dl>
+            <dt>
               Elementary School: 
-              <a target="_blank" href="http://os-retfala-os.skole.hr/">OŠ Retfala</a>
-            </li>
-            <li>
+              <a target="_blank" href="http://os-retfala-os.skole.hr/">  OŠ Retfala</a>
+            </dt>
+            <dt>
               High School:
-              <a target="_blank" href="http://gimnazija-treca-os.skole.hr/">III. gimnazija Osijek</a>
-            </li>
-            <li>
+              <a target="_blank" href="http://gimnazija-treca-os.skole.hr/">  III. gimnazija OS</a>
+            </dt>
+            <dt>
               Faculty: 
-              <a target="_blank" href="https://www.ferit.unios.hr/2021/">FERIT, Osijek</a>
-            </li>
-            <li>
-              Skills: problem solving, communication, proffiency, teamwork
-            </li>
-            <li>
-              <a target="_blank" href="https://gitlab.com/mirjam.ercegovac">Gitlab</a>
-            </li>
-          </ul>
+              <a target="_blank" href="https://www.ferit.unios.hr/2021/">  FERIT, Osijek</a>
+            </dt>
+            <dt>
+              Skills: 
+            </dt>
+            <dd>
+              <li>
+                problem solving, communication, proffiency, teamwork
+              </li>
+              <li>
+              <a target="_blank" href="https://gitlab.com/mirjam.ercegovac">Gitlab account</a>
+              </li>
+            </dd>
+          </dl>
         </Description>
       </Main>
 
