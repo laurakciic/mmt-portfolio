@@ -176,10 +176,10 @@ const Main = () => {
           whileTap={{scale: 0.9}}
 
           >
-            • Photo & Video •
+            • Photo •
           </motion.h2>
         </BLOG>
-        {/* <WORK to="/work" click={click}>
+        <WORK to="/work" click={click}>
           <motion.h2
           initial={{
             y:-200,
@@ -194,9 +194,9 @@ const Main = () => {
           whileTap={{scale: 0.9}}
 
           >
-            Work
+            • Video •
           </motion.h2>
-        </WORK> */}
+        </WORK>
         <BottomBar>
           <ABOUT to="/about" click={click}>
             <motion.h2
