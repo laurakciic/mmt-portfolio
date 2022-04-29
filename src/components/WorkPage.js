@@ -8,7 +8,8 @@ import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
 import ParticleComponent from '../subComponents/ParticleComponent';
 
-import video1 from '../assets/video/mirjam-video.mp4'
+import videoMirjam from '../assets/video/mirjam-video.mp4'
+import videoLaura from '../assets/video/laura-video.mp4'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -88,14 +89,16 @@ const WorkPage = () => {
 
       <Main>
         <Description>
-          
+        <video width="450" height="340" controls>
+            <source src={videoLaura} type="video/mp4" />
+          </video>
         </Description>
       </Main>
 
       <Main>
         <Description>
           <video width="450" height="340" controls>
-            <source src={video1} type="video/mp4" />
+            <source src={videoMirjam} type="video/mp4" />
           </video>
         </Description>
       </Main>
