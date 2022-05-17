@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+## Website Link
+
+[MMT Portfolio](https://mmt-portfolio.web.app/)
+
+## Host & Deploy 
+
+This website is hosted free of cost with Firebase Hosting. 
+
+## Notes
+
+- this project contains no database because it's not meant to work with data, it's sole purpose is to demonstrate 
+  a few different multimedia in an integrated environment representing a two-student portfolio
+- different multimedia refers to audio, video, photo & animation (2 of each)
+
+-------------------------------------------------------------------------------------------------------------------
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
