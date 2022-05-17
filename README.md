@@ -12,6 +12,9 @@ This website is hosted free of cost with Firebase Hosting.
   a few different multimedia in an integrated environment representing a two-student portfolio
 - different multimedia refers to audio, video, photo & animation (2 of each)
 
+
+
+
 -------------------------------------------------------------------------------------------------------------------
 
 ## Getting Started with Create React App
